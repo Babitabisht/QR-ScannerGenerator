@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:qr_scanner_generator/screens/generate.dart';
 
 import 'screens/scan.dart';
 
@@ -31,6 +32,15 @@ class Home extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                       context, MaterialPageRoute(builder: (context) => Scan()));
+                },
+              ),
+              RaisedButton(
+                color: Colors.amber,
+                textColor: Colors.black,
+                child: Text("GENERATE"),
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Generate()));
                 },
               )
             ],
